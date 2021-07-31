@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <CheckBox
+        android:id="@+id/checkBoxVibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Vibration"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Torch Light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/textChooseAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTorch" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChooseAlarm">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/siren_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickRadio"
+                android:text="@string/police_siren_1"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/siren_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/siren_one"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickRadio"
+                android:text="@string/police_siren_2"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/siren_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/siren_two"
+                android:onClick="onClickRadio"
+                android:text="@string/police_siren_3"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/radioGroup2"
+            android:background="@drawable/custom_toggle_play"
+            android:onClick="playSiren"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/toggleButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toRightOf="@+id/radioGroup2"
+            android:background="@drawable/custom_toggle_play"
+            android:onClick="playSiren"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/radioGroup2"
+            android:background="@drawable/custom_toggle_play"
+            android:onClick="playSiren"
+            android:textOff=" "
+            android:textOn=" " />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textChooseAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Choose Alarm Siren"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTorch" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Features"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

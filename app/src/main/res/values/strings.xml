@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Charger Alarm</string>
+    <string name="charger_status_text">CHARGING STATUS :</string>
+    <string name="alarm_status_text">ALARM STATUS :</string>
+    <string name="turn_on">Turn On</string>
+    <string name="turn_off">Turn off</string>
+    <string name="charging_status">OFF</string>
+    <string name="alarm_status">OFF</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_about_developer">About Developer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="police_siren_1">Police Siren 1</string>
+    <string name="police_siren_2">Police Siren 2</string>
+    <string name="police_siren_3">Police Siren 3</string>
+    <string name="anmolthedeveloper">AnmolTheDeveloper</string>
+    <string name="developed_by">Developed By</string>
+</resources>

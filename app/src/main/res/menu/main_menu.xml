@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feedback"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/menu_feedback"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about_developer"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/menu_about_developer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+</menu>
